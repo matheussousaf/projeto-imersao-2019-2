@@ -1,0 +1,13 @@
+Configurações de proxy:
+
+Node(npm): npm config set proxy "http://seu_proxy:suaporta"
+
+Ionic: ionic config set -g proxy http://seu_proxy:suaporta
+
+Git: git config --global http.proxy http://proxy.example.com:8888
+
+
+
+GATSBY, FONT FLIPPER
+
+https://www.gatsbyjs.org/starters/smakosh/gatsby-portfolio-dev/	
