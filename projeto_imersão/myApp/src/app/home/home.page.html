@@ -1,9 +1,10 @@
 <ion-content>
-  <div class="ion-padding">
-      <ion-fab vertical="bottom" horizontal="end" slot="fixed" color="primary">
-          <ion-fab-button>
-            <ion-icon name="add"></ion-icon>
-          </ion-fab-button>
-        </ion-fab>
+  <div #map>
+    <ion-searchbar [(ngModel)]="search" placeholder="Para onde?" (ionChange)="searchChanged()" [debounce]="250"></ion-searchbar>
+    <ion-list [hidden]="!search.length" class="ion-margin-horizontal">
+      <ion-item (click)="calcRoute(result)" *ngFor="let result of searchResults">
+        {{ result.description }}
+      </ion-item>
+    </ion-list>
   </div>
 </ion-content>
