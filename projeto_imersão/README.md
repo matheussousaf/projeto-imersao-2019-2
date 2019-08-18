@@ -1,4 +1,4 @@
-# Ionic Uber:car:
+# :car: Ionic Uber
 
 ## Projeto Imersão - Fábrica de Software 2019.2
 ---
