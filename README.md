@@ -69,7 +69,7 @@ Ferramentas necessárias:
 
 ### 4 - Adicionais
 
-**Para configurar o "commiter":**
+**Para configurar o usuário:**
 
 `````
 git config user.name {nome_do_usuario}
