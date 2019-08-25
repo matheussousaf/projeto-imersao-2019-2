@@ -1,0 +1,63 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+/*
+    Mudando um pouco o background
+*/
+ion-content{
+    --background: rgb(236, 236, 236);
+}
+
+/*
+    Mudando um pouco o tamanho do h1
+*/
+h1{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+
+//Mudando o estilo da imagem
+#kitty{
+    margin: 0 auto;
+    width: 50%;
+}
+
+//Mudando o estilo da descrição
+#descricao{
+    color: #191919;
+    font-size: 20px;
+    font-style: italic;
+}
+
+/*
+    Alterando os estilos do input
+*/
+ion-input{
+    border-radius: 50px;
+    margin: 0 auto;
+    width: 300px;
+    color: rgb(170, 170, 170);
+    margin-bottom: 30px;
+    --background: white;
+    font-size: 18px;
+
+    //Padding
+    --padding-bottom: 20px;
+    --padding-top: 20px;
+    --padding-end: 20px;
+    --padding-start: 20px;
+
+    //Placeholder
+    --placeholder-color: rgb(170, 170, 170);
+}
+
+//Estilos do botão
+#btn{
+    --padding-bottom: 30px;
+    --padding-top: 30px;
+    --padding-end: 30px;
+    --padding-start: 30px;
+}

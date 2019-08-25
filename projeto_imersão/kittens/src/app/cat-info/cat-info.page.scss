@@ -1,0 +1,31 @@
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+//Mudando estilos do background
+ion-content{
+    --background: rgb(236, 236, 236);
+}
+
+//Itens da lista
+h4{
+    margin: 0 15px;
+    font-size: 15px;
+}
+
+p{
+    font-size: 12px;
+    color: gray;
+}
+
+//Imagem
+img{
+    border-radius: 20px;
+}
+
+//Card
+ion-card{
+    --background: white;
+    border-radius: 20px;
+    padding: 20px;
+}

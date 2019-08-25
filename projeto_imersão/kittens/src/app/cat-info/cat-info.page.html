@@ -1,0 +1,157 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- Botão para voltar para a página anterior-->
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content center text-center>
+  <div *ngIf="carregou">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{res[0].breeds[0].name}}</ion-card-title>
+      </ion-card-header>
+
+      <img src="{{res[0].url}}" alt="cat" width="300px">
+
+      <ion-card-content>
+
+      </ion-card-content>
+
+      <ion-grid fixed>
+
+        <!-- Item 1-->
+        <ion-row>
+          <ion-col size="12">
+            <ion-item class="itens">
+              <ion-icon class="icons" name="flag" size="large" color="primary"></ion-icon>
+              <ion-text color="medium">
+                <h4>Origem:</h4>
+              </ion-text>
+              <p>{{res[0].breeds[0].origin}}</p>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <!-- Item 2-->
+        <ion-row>
+          <ion-col size="12">
+            <ion-item class="itens">
+              <ion-icon class="icons" name="paw" size="large" color="primary"></ion-icon>
+              <ion-text color="medium">
+                <h4>Dog Friendly: </h4>
+              </ion-text>
+              <p>{{res[0].breeds[0].dog_friendly}}</p>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <!-- Item 3-->
+        <ion-row>
+          <ion-col size="12">
+            <ion-item class="itens">
+              <ion-icon class="icons" name="heart" size="large" color="primary"></ion-icon>
+              <ion-text color="medium">
+                <h4>Afeição: </h4>
+              </ion-text>
+              <p>{{res[0].breeds[0].affection_level}}</p>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <!-- Item 4-->
+        <ion-row>
+          <ion-col size="12">
+            <ion-item class="itens">
+              <ion-icon class="icons" name="star" size="large" color="primary"></ion-icon>
+              <ion-text color="medium">
+                <h4>Raridade: </h4>
+              </ion-text>
+              <p>{{res[0].breeds[0].rare}}</p>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+
+    </ion-card>
+  </div>
+
+
+  <!--SE NÃO CARREGOU-->
+
+
+  <div *ngIf="!carregou">
+    <ion-card>
+      <ion-card-header>
+        <ion-skeleton-text animated style="width: 80%; height: 30px; margin: 0 auto;"></ion-skeleton-text>
+      </ion-card-header>
+
+      <ion-skeleton-text animated style="width: 300px; height: 300px; margin: 0 auto;"></ion-skeleton-text>
+
+      <ion-card-content>
+
+      </ion-card-content>
+
+      <ion-grid fixed>
+
+        <!-- Item 1-->
+        <ion-row>
+          <ion-col size="12">
+            <ion-item class="itens">
+              <ion-icon class="icons" name="flag" size="large" color="primary"></ion-icon>
+              <ion-text color="medium">
+                <h4>Origem:</h4>
+              </ion-text>
+              <ion-skeleton-text animated style="width: 70%; height: 15px; margin: 0 auto;"></ion-skeleton-text>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <!-- Item 2-->
+        <ion-row>
+          <ion-col size="12">
+            <ion-item class="itens">
+              <ion-icon class="icons" name="paw" size="large" color="primary"></ion-icon>
+              <ion-text color="medium">
+                <h4>Dog Friendly: </h4>
+              </ion-text>
+              <ion-skeleton-text animated style="width: 70%; height: 15px; margin: 0 auto;"></ion-skeleton-text>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <!-- Item 3-->
+        <ion-row>
+          <ion-col size="12">
+            <ion-item class="itens">
+              <ion-icon class="icons" name="heart" size="large" color="primary"></ion-icon>
+              <ion-text color="medium">
+                <h4>Afeição: </h4>
+              </ion-text>
+              <ion-skeleton-text animated style="width: 70%; height: 15px; margin: 0 auto;"></ion-skeleton-text>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <!-- Item 4-->
+        <ion-row>
+          <ion-col size="12">
+            <ion-item class="itens">
+              <ion-icon class="icons" name="star" size="large" color="primary"></ion-icon>
+              <ion-text color="medium">
+                <h4>Raridade: </h4>
+              </ion-text>
+              <ion-skeleton-text animated style="width: 70%; height: 15px; margin: 0 auto;"></ion-skeleton-text>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+
+    </ion-card>
+  </div>
+
+</ion-content>

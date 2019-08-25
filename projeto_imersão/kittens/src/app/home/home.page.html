@@ -1,0 +1,33 @@
+<ion-content center text-center>
+    <ion-text color="primary">
+      <h1>Ionic Kittens</h1>
+    </ion-text>
+
+    <img id="kitty" src="../../assets/main.png" alt="Kitty">
+
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="12">
+          <ion-text>
+            <p id="descricao">"Meow!"</p>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-input name="input" [(ngModel)]="nome" type="text" autofocus="true" autocomplete="on"  placeholder="Insira o id do gato aqui"></ion-input>
+    
+    <!--
+      Aqui temos algumas coisas novas como:
+
+      routerLink: se comunica com páginas que estão no routing do Ionic.
+
+      onClick: função que inicia quando clicamos no botão.
+
+    -->
+    <ion-button id="btn" size="large" (click)="procurarGato(nome)" >
+      Pesquise!
+    </ion-button>
+
+
+</ion-content>
