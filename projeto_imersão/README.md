@@ -59,7 +59,7 @@ No seu home.page.html, altere:
       </ion-row>
     </ion-grid>
 
-    <ion-input name="input" type="text" autofocus="true" autocomplete="on"  placeholder="Insira a raça do gato aqui"></ion-input>
+    <ion-input [(ngModel)]="nome" type="text" autofocus="true" autocomplete="on"  placeholder="Insira a raça do gato aqui"></ion-input>
 
     <!-- Botão para procurar o gato -->
     <ion-button id="btn" size="large" (click)="procurarGato(nome)" >
@@ -616,7 +616,7 @@ E por último, precisamos fazer o display desses dados na tela usando o angular 
 </ion-content>
 ````
 
-###Resumão
+Resumão
 ---
 
 Nesse projeto você aprendeu como:
