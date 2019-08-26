@@ -31,7 +31,7 @@ export class CatInfoPage{
         if((Object.keys(this.res).length <= 0) ||this.catsSrvc.nome == ""){
         this.carregou = false;
         this.presentAlert();
-        //this.router.navigateByUrl('/home');
+        this.router.navigateByUrl('/home');
         }
         else{
           this.carregou = true;

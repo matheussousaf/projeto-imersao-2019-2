@@ -619,5 +619,12 @@ E por último, precisamos fazer o display desses dados na tela usando o angular 
 ###Resumão
 ---
 
+Nesse projeto você aprendeu como:
+
+* Fazer a conexão com uma API em Angular;
+* Alguns fundamentos e componentes Ionic 4;
+*
+*
+
 
 
