@@ -8,17 +8,19 @@
 </ion-header>
 
 <ion-content center text-center>
+  <!-- 
+    Aqui vamos esperar os dados carregarem antes de popular a página
+  -->
   <div *ngIf="carregou">
     <ion-card>
+
+      <!-- Título -->
       <ion-card-header>
         <ion-card-title>{{res[0].breeds[0].name}}</ion-card-title>
       </ion-card-header>
 
+      <!-- Imagem -->
       <img src="{{res[0].url}}" alt="cat" width="300px">
-
-      <ion-card-content>
-
-      </ion-card-content>
 
       <ion-grid fixed>
 
@@ -80,8 +82,9 @@
   </div>
 
 
-  <!--SE NÃO CARREGOU-->
-
+  <!--
+    Se não carregar, temos um esqueleto simples para dar o feedback para o usuário
+  -->
 
   <div *ngIf="!carregou">
     <ion-card>
@@ -90,10 +93,6 @@
       </ion-card-header>
 
       <ion-skeleton-text animated style="width: 300px; height: 300px; margin: 0 auto;"></ion-skeleton-text>
-
-      <ion-card-content>
-
-      </ion-card-content>
 
       <ion-grid fixed>
 

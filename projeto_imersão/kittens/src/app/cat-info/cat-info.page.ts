@@ -3,6 +3,7 @@ import { CatsService } from '../services/cats.service';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 
+
 @Component({
   selector: 'app-cat-info',
   templateUrl: './cat-info.page.html',
@@ -23,20 +24,19 @@ export class CatInfoPage{
   }
 
   async procurandoGato(){
-
     try{
       await this.catsSrvc.procurarGato(this.catsSrvc.nome).subscribe(data => {
         this.res = data;
-        console.log(this.res);
-      })
 
-      if(this.res.length > 0){
-        this.carregou = true;
-      }
-      else{
+        if((Object.keys(this.res).length <= 0) ||this.catsSrvc.nome == ""){
         this.carregou = false;
-        this.router.navigateByUrl('/home');
-      }
+        this.presentAlert();
+        //this.router.navigateByUrl('/home');
+        }
+        else{
+          this.carregou = true;
+        }
+      })
     }
     catch(error){
       console.log(error);

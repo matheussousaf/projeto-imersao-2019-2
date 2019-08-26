@@ -9,7 +9,6 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http'
-import { CatInfoPage } from './cat-info/cat-info.page';
 import { CatsService } from './services/cats.service';
 
 @NgModule({
@@ -26,7 +25,6 @@ import { CatsService } from './services/cats.service';
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     CatsService,
-    CatInfoPage,
   ],
   bootstrap: [AppComponent]
 })
