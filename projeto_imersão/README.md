@@ -623,8 +623,8 @@ Nesse projeto você aprendeu como:
 
 * Fazer a conexão com uma API em Angular;
 * Alguns fundamentos e componentes Ionic 4;
-*
-*
+* Padrões de organização de projeto;
+* Estrutura de um projeto Ionic 4.
 
 
 
